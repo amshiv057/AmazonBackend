@@ -16,7 +16,7 @@ app.use(cookieParser(""));
 app.use(cors());
 app.use(router);
 const port = process.env.PORT || 4000;
-
+mongoose.connect(process.env.DATABASE);
 //for deployment 
 
 if(process.env.NODE_ENV==="production"){
