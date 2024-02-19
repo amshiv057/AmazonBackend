@@ -1,0 +1,65 @@
+{
+  "development": {
+    "config_id": "development",
+    "port": 4000,
+    "hostAddress": "localhost:4000",
+    "databaseHost": "0.0.0.0",
+    "databasePort": "27017",
+    "databaseName": "AmazonWeb",
+    
+    "jwtsecret": "nodejwt",
+    "jwtresetsecret": "nodejwt",
+    "jwtOptions": {
+      "expiresIn": "24h"
+    },
+    "swaggerDefinition": {
+      "info": {
+        "title": "Shivam_backend",
+        "version": "1.0",
+        "description": "Shivam_backend - API Docs"
+      },
+      "basePath": "/api/v1",
+      "securityDefinitions": {
+        "tokenauth": {
+          "type": "apiKey",
+          "name": "Authorization",
+          "in": "header"
+        }
+      }
+    }
+  },
+  "production": {
+    "config_id": "production",
+    "port": 5009,
+    "hostAddress": "172.18.15.245:5009",
+    "databaseHost": "0.0.0.0",
+    "databasePort": "27017",
+    "databaseName": "AmazonWeb",
+    "dbCredential": {
+      "host": "@cluster0.bzkdvic.mongodb.net",
+      "user": "tiwarishiv7169",
+      "dbName": "AmazonWeb",
+      "password": "Shivam12"
+    },
+    "jwtsecret": "nodejwt",
+    "jwtresetsecret": "nodejwt",
+    "jwtOptions": {
+      "expiresIn": "24h"
+    },
+    "swaggerDefinition": {
+      "info": {
+        "title": "Shivam_backend",
+        "version": "1.0",
+        "description": "Shivam_backend - API Docs"
+      },
+      "basePath": "/api/v1",
+      "securityDefinitions": {
+        "tokenauth": {
+          "type": "apiKey",
+          "name": "Authorization",
+          "in": "header"
+        }
+      }
+    }
+  }
+}
